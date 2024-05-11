@@ -1,0 +1,197 @@
+
+
+@media (min-width : 769px){
+
+  
+
+  .li__nav__item{
+    display: inline-block;
+    position: relative;
+  }
+
+  .li__nav__item a{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
+  .intro__nav_button{
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px){
+  .intro__nav{
+    display: none;
+  }
+
+  .intro__nav_button{
+    all: unset;
+    display: block;
+    width: 72px;
+    height: 72px;
+    background-image: url(../data/menu.png) ;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  .intro__nav_button:checked + .intro__nav{
+    display: inherit;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--background-color-1);
+    padding-bottom: 1em;
+  }
+
+  .li__nav__item{
+    width: 100vw;
+    text-align: center;
+    margin: 3px;
+    padding: 5px;
+
+  }
+  .li__nav__item a{
+    width: 100px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+
+
+  .li__nav__item:not(:last-child){
+    border-bottom: 2px solid #f0b2e9;
+  }
+}
+/*------------------------------------------*/
+.intro{
+  display: flex;
+  background-color: var(--color-lightpurple);
+  border-color: lightblue;
+  border: 1em;
+  position: sticky;
+
+  z-index: 2;
+
+  top: 0;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.intro__favicon{
+  display: inline-block;
+  padding: 0 24px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.image{
+  height: 60px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+
+}
+
+.intro__list{
+  font-size: 2px;
+  margin-right: 15px;
+}
+
+.li__nav__item a{
+  display: inline-block;
+  font-family: 'Poor Story';
+  color: white;
+  
+}
+
+
+
+/*------------------------------------*/
+.header{
+  background-image: url('../data/blurry-gradient-haikei.svg');
+
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+
+
+}
+.header__title{
+  display: inline-block;
+  font-family: 'Jersey 10';
+  font-size: 10vw;
+  margin: 5px;
+  
+}
+.title_section{
+  padding: 30px;
+}
+.imoge{
+  font-size: 74px;
+}
+
+
+
+
+.anima{
+  margin: 30px 5px;
+  text-align: left;
+  background-size: cover;
+}
+.detail{
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  height: 5px;
+  background-color: plum;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.run_sha{
+  background-color:  rgb(141, 99, 141);
+  height: 5px;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.run_cha{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 35px;
+  position: absolute;
+  top: -50px;
+  left: 0%;
+  transform: translateX(-13%);
+}
+.run_sha, .run_cha{
+  
+  animation-name: moveLeft;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+@keyframes moveLeft {
+  from{
+    left: 0%;
+  }
+  to {
+    left: 97%; /* 이동할 거리 */
+  }
+}
+

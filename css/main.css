@@ -1,0 +1,20 @@
+
+
+@media (min-width: 769px){
+  main{
+    display:flex; 
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 768px){
+  main{
+    display:flex; 
+    flex-direction: column;
+  }
+}
+
+main{
+  display:flex; 
+  flex-direction: column;
+}

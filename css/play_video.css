@@ -1,0 +1,8 @@
+
+
+.play_video{
+  background-image: url('../data/polygon-scatter-haikei\ \(1\).svg');
+  height: 600px;
+  background-size: cover;
+  justify-content: center;
+}

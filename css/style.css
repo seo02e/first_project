@@ -1,0 +1,64 @@
+/*first project*/
+
+
+
+
+@import url('../css/intro.css');
+@import url('../css/youtube.css');
+@import url('../css/main.css');
+@import url('../css/game.css');
+@import url('../css/movie.css');
+@import url('../css/play_video.css');
+@import url('../css/footer_data.css');
+
+/*폰트 설정*/
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Jersey+10&family=Poor+Story&display=swap');
+
+
+header{
+  font-family: 'Jersey 10';
+}
+
+body{
+
+  margin: 0;
+  min-height: 150vh;
+}
+ul, ol{
+  margin: 0;
+  padding:  0;
+  list-style-type: none;
+}
+
+li{
+  margin-left: 10px ;
+
+}
+
+a{
+  font-size: 10px;
+}
+
+:root{
+  --color-dark: #050021;
+  --color-purple: #c33bff;
+  --color-darkblue: #2f008f;
+  --color-lightpurple: #ec7bdf;
+  --color-sparkingpurple: #f50ae1;
+ 
+  
+  --background-color-1: #ffc5f8;
+  --background-color-2: #93cbff;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}

@@ -1,0 +1,8 @@
+
+
+.movie{
+  background-image: url('../data/layered-peaks-haikei.svg');
+  height: 600px;
+  background-size: cover;
+  justify-content: center;
+}

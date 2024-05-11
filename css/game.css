@@ -1,0 +1,82 @@
+@media (min-width: 769px){
+
+}
+@media (max-width: 768px){
+
+}
+
+.game_kind{
+  background-image: url('../data/layered-steps-haikei.svg');
+  height: 1000px;
+  background-size: cover;
+  justify-content: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 6fr;
+
+}
+
+.game_menu{
+  grid-column: 1/ -1;
+  margin-left: 25px;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px ;
+  width: 200px;
+  height: 70px;
+
+  
+}
+
+.game_content img{
+  width: 80px;
+  border-radius: 10%;
+  opacity: 1;
+
+  margin: 10px;
+}
+.color_text1{
+  color: rgb(62, 140, 230);
+}
+.color_text2{
+  color: rgb(237, 108, 247);
+}
+
+.pc_game, .mobile_game{
+  
+  margin: 40px;
+  border-radius: 10%;
+  backdrop-filter: blur(70px);
+
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 2px solid plum ;
+  justify-items: center;
+  align-items: center;
+}
+.game_content{
+  justify-self: center;
+  display: inline-flex;
+}
+
+.text_content{
+  width: 300px;
+  height: 80px;
+  margin-left: 30px;
+  border-radius: 8%;
+}
+
+.kind{
+  grid-column: 1/-1;
+
+  font-size: 80px;
+  font-family: 'Jersey 10' ;
+  color: antiquewhite;
+  margin: 10px;
+  
+  display: inline-flex;
+}
+

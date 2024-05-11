@@ -1,0 +1,140 @@
+
+
+.youtube_j{
+  background-image: url(../data/stacked-steps-haikei.svg);
+  height: 600px;
+  background-size: cover;
+  justify-content: center;
+}
+
+.youtube_j:not(.youtube_menu){
+  align-items: center;
+
+}
+
+.youtube_btn{
+  all: unset;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url(../data/free-icon-font-angle-left-3916912.svg) ;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.youtube_btn2{
+  all: unset;
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url(../data/free-icon-font-angle-right-3916907.svg) ;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.youtube_menu{
+  margin-left: 25px;
+  padding: 0;
+  margin: 20px;
+  margin-left: 30px ;
+  width: 600px;
+}
+
+.korean{
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poor Story';
+  font-size: 35px;
+  color: antiquewhite;
+}
+.english{
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.09em;
+  color: antiquewhite;
+
+}
+
+p{
+  color: rgb(0, 0, 0);
+  width: 150px;
+  height: 200px;
+  padding-top: 10px;
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 0;
+  opacity: 0.5;
+  align-content: center;
+
+  border-radius: 10%;
+}
+.content a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.content{
+  border-left: solid 2px rgb(234, 206, 249);
+  
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+  align-content: center;
+}
+
+
+
+.youtube_content{
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.youtube_content:not(.content){
+  align-items: center;
+}
+
+.content img{
+  border-radius: 50%;
+  padding: 10px;
+  width: 120px;
+}
+
+
+@media (min-width: 769px){
+  .content img:hover{
+    width: 130px;
+    padding: 5px;
+  }
+
+  .youtube_btn:checked ~ #yoon,
+  .youtube_btn:checked ~ #ji,
+  .youtube_btn:checked ~ #diva {
+      display: none;
+      border-right:none
+  }
+
+  .youtube_btn:not(:checked) ~ #sutak,
+  .youtube_btn:not(:checked) ~ #rilka,
+  .youtube_btn:not(:checked) ~ #yd{
+      display: none;
+      border-right:none
+  }
+}
+
+
+@media (max-width: 768px){
+
+
+}
