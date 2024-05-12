@@ -1,5 +1,5 @@
 
-
+/*pc*/
 @media (min-width : 769px){
   .li__nav__item{
     display: inline-block;
@@ -8,13 +8,12 @@
   .li__nav__item a{
     font-size: 25px;
     text-decoration: none;
-    margin-left: 10px;
   }
   .intro__nav_button{
     display: none;
   }
 }
-
+/*mobile*/
 @media (max-width: 768px){
   .intro__nav{
     display: none;
@@ -75,7 +74,10 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.intro__nav{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .intro__favicon{
   display: inline-block;
@@ -104,6 +106,24 @@
   
 }
 
+.li__nav__item a:hover{
+  color: rgb(129, 27, 225);
+}
+.li__nav__item a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background-color:rgb(129, 27, 225) ;
+  transition: all 530ms;
+}
+
+.li__nav__item a:hover::after{
+  background-color:rgb(129, 27, 225) ;
+  height: 2px;
+  width: 100%;
+}
 
 
 /*------------------------------------*/
@@ -164,7 +184,7 @@
   display: inline-block;
   padding: 0;
   margin: 0;
-  font-size: 8vw;
+  font-size: 4vw;
   position: absolute;
   bottom: 0;
 
@@ -178,7 +198,7 @@
 .run_sha{
   background-color:  rgb(141, 99, 141);
   height: 1.5vh;
-  width: 8vw;
+  width: 4vw;
 
   border-radius: 50%;
   position: absolute;
@@ -199,15 +219,15 @@
     left: 0;
   }
   to {
-    left: calc(100% - 8vw); /* 이동할 거리 */
+    left: calc(100% - 4vw); /* 이동할 거리 */
   }
 }
 @keyframes moveLeft2{
   from{
-    left: calc(0% - 1.5vw);
+    left: calc(0% - 0.7vw);
   }
   to{
-    left: calc(100% - 9.5vw);
+    left: calc(100% - 5vw);
   }
 }
 
